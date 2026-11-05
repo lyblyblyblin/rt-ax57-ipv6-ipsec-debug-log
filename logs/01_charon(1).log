@@ -1,0 +1,30 @@
+Nov  6 00:35:03 00[DMN] +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+Nov  6 00:35:03 00[DMN] Starting IKE service (strongSwan 6.1.0, Android 17 - MEP-AN00 11.0.0.110(SP8C00E110R103P1)/2026-09-01, MEP-AN00 - HONOR/MEP-AN00/HONOR, Linux 6.6.118-android15-8-g554929766a0d-abogki544555896-4k, aarch64, org.strongswan.android)
+Nov  6 00:35:03 00[LIB] providers loaded by OpenSSL: default legacy
+Nov  6 00:35:04 00[LIB] loaded plugins: androidbridge charon android-log socket-default openssl nonce pkcs1 pem x509 xcbc kdf revocation eap-identity eap-mschapv2 eap-md5 eap-gtc eap-tls
+Nov  6 00:35:04 00[JOB] spawning 16 worker threads
+Nov  6 00:35:04 00[LIB] all OCSP validation disabled
+Nov  6 00:35:04 00[LIB] all CRL validation disabled
+Nov  6 00:35:04 11[IKE] initiating IKE_SA android[2] to REDACTED_SERVER_IPv6
+Nov  6 00:35:04 11[ENC] generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) ]
+Nov  6 00:35:04 11[NET] sending packet: from REDACTED_CLIENT_IPv6_A[59345] to REDACTED_SERVER_IPv6[500] (948 bytes)
+Nov  6 00:35:04 12[NET] received packet: from REDACTED_SERVER_IPv6[500] to REDACTED_CLIENT_IPv6_A[59345] (58 bytes)
+Nov  6 00:35:04 12[ENC] parsed IKE_SA_INIT response 0 [ N(INVAL_KE) V ]
+Nov  6 00:35:04 12[IKE] received strongSwan vendor ID
+Nov  6 00:35:04 12[IKE] peer didn't accept key exchange method ECP_256, it requested CURVE_25519
+Nov  6 00:35:04 12[IKE] initiating IKE_SA android[2] to REDACTED_SERVER_IPv6
+Nov  6 00:35:04 12[ENC] generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) ]
+Nov  6 00:35:04 12[NET] sending packet: from REDACTED_CLIENT_IPv6_A[59345] to REDACTED_SERVER_IPv6[500] (916 bytes)
+Nov  6 00:35:04 16[NET] received packet: from REDACTED_SERVER_IPv6[500] to REDACTED_CLIENT_IPv6_A[59345] (293 bytes)
+Nov  6 00:35:04 16[ENC] parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) CERTREQ N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(MULT_AUTH) V ]
+Nov  6 00:35:04 16[IKE] received strongSwan vendor ID
+Nov  6 00:35:04 16[CFG] selected proposal: IKE:AES_CBC_128/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/CURVE_25519
+Nov  6 00:35:04 16[IKE] faking NAT situation to enforce UDP encapsulation
+Nov  6 00:35:04 16[IKE] received cert request for "C=TW, O=ASUS, CN=ASUS RT-AX57-8E28 Root CA"
+Nov  6 00:35:04 16[IKE] sending cert request for "C=TW, O=ASUS, CN=ASUS RT-AX57-8E28 Root CA"
+Nov  6 00:35:04 16[IKE] establishing CHILD_SA android{1}
+Nov  6 00:35:04 16[ENC] generating IKE_AUTH request 1 [ IDi N(INIT_CONTACT) CERTREQ IDr CPRQ(ADDR ADDR6 DNS DNS6) SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov  6 00:35:04 16[NET] sending packet: from REDACTED_CLIENT_IPv6_A[35162] to REDACTED_SERVER_IPv6[4500] (464 bytes)
+Nov  6 00:35:04 12[NET] received packet: from REDACTED_SERVER_IPv6[4500] to REDACTED_CLIENT_IPv6_A[35162] (80 bytes)
+Nov  6 00:35:04 12[ENC] parsed IKE_AUTH response 1 [ N(AUTH_FAILED) ]
+Nov  6 00:35:04 12[IKE] received AUTHENTICATION_FAILED notify error
